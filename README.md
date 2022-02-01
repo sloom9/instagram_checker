@@ -1,4 +1,4 @@
 # instagram_checker
 
 
-basic insta checker 
+*basic insta checker* 
