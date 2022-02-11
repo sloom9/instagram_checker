@@ -40,7 +40,6 @@ check_head = {
 def check_user(username):
     try:
         res = requests.post(url=check_url, headers=check_head, data='email=&username=' + username +'&first_name=&opt_into_one_tap=false')
-        print(res.text)
         if "spam" not in res.text and "fail" not in res.text:
             if 'username_is_taken' in res.text:
                 print('[-] User is taken ' + username, end='\r')
